@@ -1,0 +1,31 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>item</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+</ion-content> -->
+
+
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button>Back</ion-back-button>
+      </ion-buttons>
+      <ion-title>Details</ion-title>
+    </ion-toolbar>
+  </ion-header>
+   
+  <ion-content padding>
+    <ion-list lines="full">
+      <ion-item>
+        <ion-input required type="text" placeholder="Name" [(ngModel)]="item.name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input required type="text" placeholder="Serial" [(ngModel)]="item.serial"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button expand="full" (click)="saveItem()">Save</ion-button>
+  </ion-content>

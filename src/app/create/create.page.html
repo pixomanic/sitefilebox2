@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>create</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    
+        <form [formGroup]="addItemForm="addItem()">
+          <ion-item>
+            <ion-label stacked>Item Name</ion-label>
+            <ion-input formControlName="itemName" type="text" 
+              placeholder="Plant Item Name">
+            </ion-input>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label stacked>Serial Number</ion-label>
+            <ion-input formControlName="itemSerial" type="text" 
+              placeholder="Plant Item Serial">
+            </ion-input>
+          </ion-item>
+      
+      
+          <ion-button expand="block" type="submit" 
+            [disabled]="!createSongForm.valid">
+            Add Song
+          </ion-button>
+        </form>
+   
+</ion-content>
